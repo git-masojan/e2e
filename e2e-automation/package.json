@@ -1,0 +1,25 @@
+{
+  "name": "e2e-automation",
+  "version": "1.0.0",
+  "description": "API and WEb Automation",
+  "main": "index.js",
+  "scripts": {
+    "clean-reports": "cypress/reports/results/*.json cypress/reports/features cypress/reports/index.html",
+    "test-webui": "npm run ./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\" --record --key 123-456-4c8b-9b7b-1234567890",
+    "cypress": "npm run ./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\"",
+    "ojan": "./node_modules/.bin/cypress-tags run --spec \"cypress/integration/*.feature\"",
+    "cypress-ui": "./node_modules/.bin/cypress open",
+    "reports": "node cypress/cypress_report.js",
+    "open-reports": "open 'cypress/reports/index.html'",
+    "clean": "node_modules package-lock.json yarn.lock"  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git-masojan/e2e.git"
+  },
+  "author": "janoko.dewanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/git-masojan/e2e/issues"
+  },
+  "homepage": "https://github.com/git-masojan/e2e#readme"
+}
