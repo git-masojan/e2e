@@ -1,1 +1,9 @@
-{}
+{
+    "projectId": null,
+    "env": {
+        "base_url": "https://github.com",
+        "gits_url": "https://gist.github.com",
+        "username": "git-masojan",
+        "password": "Mas.Ojan.10."
+    }
+  }
